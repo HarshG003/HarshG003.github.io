@@ -1,0 +1,48 @@
+<head>
+    <style>
+        .info {
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            border: 3px solid red;
+            box-shadow: rgb(0, 0, 0) 3px 3px 8px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            text-shadow: red 2px 2px 2px;
+            background-color: #80ffd4;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .butt {
+            font-size: 40px;
+            width: 100%;
+            color: cyan;
+            background-color: black;
+            text-shadow: red 3px 3px 3px;
+        }
+    </style>
+</head>
+
+<body bgcolor="chartreuse">
+    <div class="info">
+        <form action="thanks.html">
+            <h1>ENTER DETAILS</h1>
+            NAME : <input type="text"> <br> <br>
+            MOB.NO : <input type="tel"> <br> <br>
+            EMAIL : <input type="email"> <br> <br>
+            QUANTITY : <input type="number"> <br> <br>
+            ADDR : <textarea name="ADDR" id="addr" cols="30" rows="2"></textarea> <br> <br>
+            <input type="button" value="PLACE ORDER" onclick="openf()" class="butt">
+        </form>
+    </div>
+    <script>
+        function openf() {
+            // window.alert("ORDER HAS BEEN BOOKED SUCCESSFULLY AND WILL BE DELIVER AT YOUR ADDRESS IN 4 TO 5 WORKING DAYS.");
+            window.open("thanks.html", "RIGHT");
+        }
+    </script>
+</body>
